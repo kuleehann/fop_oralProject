@@ -1,10 +1,10 @@
 package com.github.battlesystem;
 
-public class Warrior extends Character {
-    Attack normalAttack = new Attack("Quick Slash", 30, 3);
-    Attack specialMove = new Attack("Crimson Blade", 40, 4);
+public class Archer extends Character {
+    Attack normalAttack = new Attack("Arrow Strike", 20, 2);
+    Attack specialMove = new Attack("Rain of Thorns", 50, 5);
 
-    public Warrior(String name, int healthPoints, int energyPoints) {
+    public Archer(String name, int healthPoints, int energyPoints) {
         super(name, healthPoints, energyPoints);
     }
 

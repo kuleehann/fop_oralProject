@@ -9,12 +9,10 @@ public abstract class Character {
     private Attack specialMove;
 
     //parameterized constructor
-    public Character(String name, int healthPoints, int energyPoints, Attack normalAttack, Attack specialMove) {
+    public Character(String name, int healthPoints, int energyPoints) {
         this.name = name;
         this.healthPoints = healthPoints;
         this.energyPoints = energyPoints;
-        this.normalAttack = normalAttack;
-        this.specialMove = specialMove;
     }
 
     //getters
@@ -51,7 +49,7 @@ public abstract class Character {
         this.specialMove = specialMove;
     }
 
-    //methods
+    //abstract methods
     public abstract void normalAttack(Character opponent);
     public abstract void specialMove(Character opponent);
 
